@@ -177,6 +177,14 @@ def RadianToDegree( radians ):
     """ Converts radians to degrees """
     return radians * (180.0/np.pi)
 
+def voltsToSample(sample, vref, bits):
+    steps = 2**bits
+    return (vref/steps)*sample
+
+def sampleToVolts(volts, vref, bits):
+    steps = 2**bits
+    return floor(volts/(vref/steps))
+
 def sgn(num):
     if num > 0:
         return 1
@@ -217,7 +225,7 @@ if __name__ == "__main__":
     
     print "Generating a sine wave...."
     sinwave = generateSineWave(1, 50, 0, 44100, 3000)
-    
+
     print "Computing the spectrum of thr square wave"
     squspec = computeSpectrum(squwave)
     

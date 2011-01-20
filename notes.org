@@ -3,6 +3,6 @@ libsim notes
 * Tasks
 ** TODO Fix the Saw Tooth wave form
 ** TODO Create better tests for this project
-** TODO Add functions to convert voltage to samples and vise-versa
+** DONE Add functions to convert voltage to samples and vise-versa
 ** TODO Add temperature conversion routines
 * 
