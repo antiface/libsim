@@ -1,0 +1,13 @@
+libsim - A Simulation Library for Python
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+libsim is a simulation library I wrote to help me when working on projects that
+require me to do digital signal processing on small embedded devices. It is hard
+to debug an algorithm on the device itself because programming the device takes 
+a long time and testing using an oscilliscope can be tricky. This help me play 
+around with the algorithm before writing it in C then programming the 
+microcontroller.
+
+Dependends on
+- numpy
+- scipy
+- matplotlib
